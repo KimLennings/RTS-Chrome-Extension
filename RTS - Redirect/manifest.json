@@ -1,0 +1,23 @@
+{
+  "name": "RTS - Redirect",
+  "version": "1.0",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["https://webshop.infrontitpartner.se/order_history?showAll=true&freetext=*"],
+      "js": ["content.js"]
+      
+    }
+  ],
+  "browser_action": {
+    "default_title": "RTS - Redirect"
+  },
+  "background": {
+    "scripts": ["content.js"]
+  },
+  "permissions": ["tabs"]
+  ,
+     "icons": {
+        "16": "logo.png"
+  }
+}
